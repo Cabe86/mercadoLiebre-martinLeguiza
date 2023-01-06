@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px; 
+}
+
+.main-header{
+    flex-wrap: wrap;
+    
+    }
+div.top-header{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+header{
+    background-color: #EAC926;
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+    display: none;
+  
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+ 
+  
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width:10%    
+}
+
+div.burger-menu{
+    text-align: center;
+    width: 100%;
+}
+div.burger-menu i{
+    background-color: #0022AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+
+}
+
+section.banner img{
+    width: 100%;
+    padding-top: 200px;
+}
+
+main{
+    width: 90%;
+    height:max-content;
+    margin: 0 auto;
+}
+main section h3{
+    margin: 20px 0px;
+}
+.products{display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+.discount{
+    width: 70%;
+    text-align: left;
+}
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+h3,
+.description{
+    color: #666;
+}
+main section article:hover .description{
+    display: block;
+
+}
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+
+main section article:hover i{
+        transform:rotate(-90deg);
+     }
+.description{
+    margin-top: 20px;
+    margin: 0;
+    padding: 15px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    transition: all 450ms;
+    display: none;
+
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+    position:relative;
+    transition: all 0.5s
+}
+main section article img{
+    width: 100%;
+}
+main section article i,
+.discount{
+    color: #39b54a;
+
+}
+
+main section article i{
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
+}
+
+
+article div.main-article{ 
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+main .register .submit, .reset {
+    background-color: #0044AA;
+    border: 1px solid #ebebeb;
+    color: rgb(8, 8, 8);
+    padding: 2px;
+    align-items: center;
+    font-style: oblique;
+    color: #ffffff;
+}
+.register input{
+    background-color: #FFF;
+    border: 1px solid #ebebeb;
+    font-style: oblique;
+    color: #000;
+}
+.register fieldset {
+    display: flex;
+    background-color: #ebebeb;
+    border: 1px solid #ebebeb;
+    font-style: normal;
+    color: #000;
+    flex-direction: column ;
+    align-content:center;
+}
+.register{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+    padding-top: 20px;
+}
+.login{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+}
+
+main .login .submit:hover{
+    background-color: #0022AA;
+    color: #fff;
+}
+
+main .login .submit {
+    background-color: #ffffff;
+    border: 1px solid #000;
+    color: rgb(8, 8, 8);
+    padding: 2px;
+    align-items: center;
+    font-style: oblique;
+    transition: 450ms;
+
+}
+.buttom{
+    font-style: oblique;
+
+}
+legend {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    }
+
+
+
+
+footer{
+    padding-top: 25px;
+}
+
+footer ul li div{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+footer ul li div i:hover{
+  color:#03264C;
+
+}
+
+footer ul li div i{
+    color:#0022AA;
+    display: flex;
+    transition: all 450ms;
+    padding: 10px;
+    transform: scale(2);
+}
+.titlefooter{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width:361px){
+
+
+    .form{width: 50%;
+    }
+    header div.logo{
+        width: 50%;
+    }
+  
+    .products article{
+       
+        width: 45%
+    }
+    .discount{
+        
+        text-align:center;
+        }
+}
+
+
+@media (min-width:769px){
+    .products article{
+        width: 23%;
+    }
+    header nav{
+        font-size: 12px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .price{
+        text-align: left;
+    }
+
+    .discount{
+        
+        text-align:right;
+        }
+        div.burger-menu{
+            display: none;
+        }
+
+     header nav ul{
+        display: flex;
+        justify-content: space-around;
+        }
+
+    header nav ul li{
+            margin: 8px;
+            }
+    footer ul li{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        align-items: center;
+     }
+
+    }
